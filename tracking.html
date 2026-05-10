@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tracking Pengiriman</title>
+  <link rel="shortcut icon" href="assets/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<div id="toast"></div>
+<body>
+
+<header class="navbar">
+  <h1>Tracking Pengiriman</h1>
+  <a href="dashboard.html" class="logout-btn">Kembali</a>
+</header>
+
+<main class="tracking-container">
+
+  <section class="tracking-search">
+    <input type="text" id="nomorDO" placeholder="Masukkan Nomor Delivery Order">
+    <button class="btn" onclick="searchTracking()">Cari</button>
+  </section>
+
+  <section id="trackingResult"></section>
+
+</main>
+
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

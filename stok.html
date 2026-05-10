@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stok Bahan Ajar</title>
+  <link rel="shortcut icon" href="assets/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<div id="toast"></div>
+<body>
+
+<header class="navbar">
+  <h1>Informasi Stok Bahan Ajar</h1>
+  <a href="dashboard.html" class="logout-btn">Kembali</a>
+</header>
+
+<main class="stok-container">
+
+  <section class="add-form">
+    <h2>Tambah Stok Baru</h2>
+
+    <input type="text" id="namaBarang" placeholder="Nama Barang">
+    <input type="number" id="stokBarang" placeholder="Jumlah Stok">
+
+    <button class="btn" onclick="tambahStok()">Tambah</button>
+  </section>
+
+  <section class="stok-grid" id="stokList"></section>
+
+</main>
+
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
